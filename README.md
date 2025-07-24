@@ -1,5 +1,5 @@
 # HollowKnightRL_minimal_PPO
-- 如无必要，勿增实体。
+- 键位默认
 - 分辨率：1176 x 664
 
 ## 目的：用最简单的奖励和动作，尽可能少的代码量打赢黄蜂女
@@ -9,10 +9,10 @@
 
 ### model
 - stable_baselines3 默认的 PPO(policy="MultiInputPolicy")
-- epoch = 6, step = 2689
+- epoch = 6, step = 2689, boss_hp = -24
 
 ### 护符
-- 忘带修长之钉了
+- 没带修长之钉，下次带上试试
 <div style="text-align: center;">
   <img src="./images/charms.png" alt="charms" style="width: auto; height: auto;">
 </div>
@@ -23,11 +23,9 @@
 - 对战结束自动重开：判断是否在雕像前，判断难度
 
 ### Actions.py
-- 默认键位，随便自定义
+- 随便自定义键位
 - 如果想放技能，记得加上蓝量判断。如果蓝量不够就不要尝试放，一整个呆住。
 - 黑冲要加间隔判断，cd=1.5s，不然学多了会在没无敌帧的情况也往 boss 脸上冲
-
-
 
 ### SendKey.py
 - 祖传代码。用 pyautogui 延迟可能高一点
