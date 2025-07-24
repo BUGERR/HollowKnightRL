@@ -1,4 +1,4 @@
-from Tool.SendKey import PressKey, ReleaseKey
+from SendKey import PressKey, ReleaseKey
 import time
 
 # Hash code for key we may use: https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes?redirectedfrom=MSDN
@@ -82,7 +82,7 @@ def Attack_Up():
     # time.sleep(0.01)
 
 
-def Short_Jump():
+def Attack_Down():
     PressKey(JUMP)
     PressKey(DOWN_ARROW)
 
@@ -94,7 +94,7 @@ def Short_Jump():
 
 
 # 6
-def Mid_Jump():
+def Mid_Jump_Attack():
     PressKey(JUMP)
     time.sleep(0.15)
 
@@ -104,7 +104,7 @@ def Mid_Jump():
     Nothing()
 
 # Dash 好像不好用，可以去掉
-def Rush():
+def Dash():
     PressKey(RUSH)
     time.sleep(0.1)
     ReleaseKey(RUSH)
@@ -155,17 +155,16 @@ def Look_up():
     ReleaseKey(UP_ARROW)
 
 
-def Cure():
-    PressKey(A)
-    time.sleep(1.4)
-    ReleaseKey(A)
-    time.sleep(0.1)
+# def Cure():
+#     PressKey(A)
+#     time.sleep(1.4)
+#     ReleaseKey(A)
+#     time.sleep(0.1)
 
 
 
-Action_set = [Attack, Attack_Up,
-           Short_Jump, Mid_Jump, Skill, Skill_Up, 
-           Skill_Down, Rush, Cure]
+Action_set = [Attack, Attack_Up, Attack_Down, Mid_Jump_Attack, 
+              Skill, Skill_Up, Skill_Down, Dash]
 
 Move_set = [Move_Left, Move_Right, Turn_Left, Turn_Right]
 
