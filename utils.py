@@ -10,6 +10,8 @@ import psutil
 import time
 from Actions import Look_up, press_and_release_JUMP
 
+BOSS_MAX_HP = 900
+
 
 def get_client_rect():
     title = "Hollow Knight"
@@ -222,7 +224,7 @@ class HpXy_getter():
 
                         if (np.all(hp_bar_center_line[..., 0] == hp_bar_center_line[..., 1]) and
                                     np.all(hp_bar_center_line[..., 1] == hp_bar_center_line[..., 2])):
-                            boss_hp = (hp_bar_center_line[..., 0] < 3).sum() / len(hp_bar_center_line)
+                            boss_hp = BOSS_MAX_HP * (hp_bar_center_line[..., 0] < 3).sum() / len(hp_bar_center_line)
                             return boss_hp
                         else:
                             return 1
