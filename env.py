@@ -174,7 +174,7 @@ class HollowKnightEnv(gym.Env):
         reward += player_hp_reward(player_hp=state["player_hp"], prev_player_hp=prev_state["player_hp"])
         reward += boss_hp_reward(boss_hp=state["boss_hp"], prev_boss_hp=prev_state["boss_hp"])
 
-        if done:
-            reward += done_reward(boss_hp=state["boss_hp"], player_hp=state["player_hp"])
+        # if done:
+        #     reward += done_reward(boss_hp=state["boss_hp"], player_hp=state["player_hp"])
 
         return reward, done
