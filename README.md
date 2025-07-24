@@ -1,4 +1,4 @@
-# A minimal implementation for playing Hollow Knight with RL to beat boss hornet
+# Minimal implementation for playing Hollow Knight with RL to beat boss hornet
 - 键位默认
 - 分辨率：1176 x 664
 
