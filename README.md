@@ -1,6 +1,11 @@
 # Minimal implementation for playing Hollow Knight with RL to beat boss hornet
 - 键位默认
 - 分辨率：1176 x 664
+- 站在手办前开始训练
+
+<div style="text-align: center;">
+  <img src="./images/restart.png" alt="restart" style="width: auto; height: auto;">
+</div>
 
 ## 目的：用最简单的奖励和动作，尽可能少的代码量打赢黄蜂女
 - 奖励：玩家血量差值，boss 血量差值。（连胜负血量差值都没加）
