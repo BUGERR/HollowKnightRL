@@ -1,10 +1,21 @@
 # HollowKnightRL_minimal_PPO
 - 如无必要，勿增实体。
+- 分辨率：1176 x 664
 
 ## 目的：用最简单的奖励和动作，尽可能少的代码量打赢黄蜂女
-- 奖励：玩家血量差值，boss 血量差值，胜负血量差值
+- 奖励：玩家血量差值，boss 血量差值。（连胜负血量差值都没加）
 - 动作：左右移动，面向左右，劈，上劈，下劈，跳劈
 - 状态：玩家血量，boss 血量
+
+### model
+- stable_baselines3 默认的 PPO(policy="MultiInputPolicy")
+- epoch = 6, step = 2689
+
+### 护符
+- 忘带修长之钉了
+<div style="text-align: center;">
+  <img src="./images/charms.png" alt="charms" style="width: auto; height: auto;">
+</div>
 
 ### utils.py
 - 捕获游戏窗口，画面
@@ -16,8 +27,7 @@
 - 如果想放技能，记得加上蓝量判断。如果蓝量不够就不要尝试放，一整个呆住。
 - 黑冲要加间隔判断，cd=1.5s，不然学多了会在没无敌帧的情况也往 boss 脸上冲
 
-### model
-- stable_baselines3 默认的 PPO(policy="MultiInputPolicy")
+
 
 ### SendKey.py
-- 用 pyautogui 延迟可能高一点
+- 祖传代码。用 pyautogui 延迟可能高一点
