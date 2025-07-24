@@ -146,7 +146,7 @@ class HollowKnightEnv(gym.Env):
         raw_state = self._get_state_vector()
 
         # 计算奖励
-        reward, done = self._reward_done(raw_state, self.prev_state, action)
+        reward, done = self._get_reward_done(raw_state, self.prev_state, action)
 
         print(f" reward:{reward:.3f}, boss_hp:{raw_state['boss_hp']}")
 
@@ -165,7 +165,7 @@ class HollowKnightEnv(gym.Env):
         return observation, reward, done, False, {}
     
 
-    def _reward_done(self, state, prev_state, action):
+    def _get_reward_done(self, state, prev_state, action):
         move_index, attack_index = action
 
         done = state["player_hp"] <= 0 or state["boss_hp"] <= 0
