@@ -7,6 +7,8 @@
 - 动作：左右移动，面向左右，劈，上劈，下劈，跳劈
 - 状态：连续 4 帧 84*84 游戏灰度图，玩家血量，boss 血量
 
+_______________________________
+
 ### model
 - stable_baselines3 默认的 PPO(policy="MultiInputPolicy")
 - 训练：[playground.ipynb](./playground.ipynb) | epoch = 6, step = 2689, boss_hp = -24
@@ -21,6 +23,9 @@
   <img src="./images/charms.png" alt="charms" style="width: auto; height: auto;">
 </div>
 
+_______________________________
+
+
 ### [utils.py](./utils.py)
 - 捕获游戏窗口，画面
 - 获取玩家血量坐标和 boss 血量：直接用基址和偏移量读内存。boss 血量不稳定，如果读不到，通过血量 MOD 计算
@@ -33,3 +38,11 @@
 
 ### [SendKey.py](./SendKey.py)
 - 祖传代码。用 pyautogui 延迟可能高一点
+
+_______________________________
+
+## References
+- https://github.com/ailec0623/DQN_HollowKnight
+- https://github.com/seermer/HollowKnight_RL
+- https://github.com/flower-whisperer/HollowKnightRL
+- https://github.com/Moapacha/rl-hollowknight-zote
