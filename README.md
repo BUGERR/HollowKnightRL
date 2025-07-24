@@ -13,7 +13,7 @@
 
 ### 血条 mod
 - 自动安装依赖：[Scarab](https://github.com/fifty-six/Scarab)
-- 默认血条是红色的，不方便判断，改成黑背景白血条，参考 [1](./Enemy HP Bar/CustomHPBar/Default)
+- 默认血条是红色的，不方便判断，改成黑背景白血条，参考 [1](Enemy HP Bar/CustomHPBar/Default)
 
 ### 护符
 - 没带修长之钉，下次带上试试
