@@ -11,6 +11,10 @@
 - stable_baselines3 默认的 PPO(policy="MultiInputPolicy")
 - epoch = 6, step = 2689, boss_hp = -24
 
+### 血条 mod
+- 自动安装依赖：[Scarab](https://github.com/fifty-six/Scarab)
+- 默认血条是红色的，不方便判断，改成黑背景白血条，参考 Enemy HP Bar
+
 ### 护符
 - 没带修长之钉，下次带上试试
 <div style="text-align: center;">
