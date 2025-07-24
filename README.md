@@ -9,7 +9,7 @@
 
 ### model
 - stable_baselines3 默认的 PPO(policy="MultiInputPolicy")
-- epoch = 6, step = 2689, boss_hp = -24
+- 训练：[playground.ipynb](./playground.ipynb) | epoch = 6, step = 2689, boss_hp = -24
 
 ### 血条 mod
 - 自动安装依赖：[Scarab](https://github.com/fifty-six/Scarab)
